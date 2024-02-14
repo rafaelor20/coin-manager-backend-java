@@ -1,8 +1,8 @@
-package com.pokemonreview.api.security;
+package com.example.coinmanager.security;
 
 import com.pokemonreview.api.models.Role;
 import com.pokemonreview.api.models.UserEntity;
-import com.pokemonreview.api.repository.UserRepository;
+import com.example.coinmanager.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
