@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.example.coinmanager.model.Users;
 
 @Repository
-public interface UsersRepository extends JpaRepository<Users, Long> {
+public interface UserRepository extends JpaRepository<Users, Long> {
 
 }
