@@ -3,7 +3,7 @@ package com.example.coinmanager.repository;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import com.example.coinmanager.model.Users;
+import com.example.coinmanager.model.UserEntity;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -23,12 +23,12 @@ public class UsersRepositoryTest {
     @Test
     public void testSaveUser() {
         // Create a new user
-        Users user = new Users();
+        UserEntity user = new UserEntity();
         user.setUsername("John Doe");
         user.setEmail("john.doe@example.com");
 
         // Save the user
-        Users savedUser = usersRepository.save(user);
+        UserEntity savedUser = usersRepository.save(user);
 
         // Verify the user is saved with an ID
         assertNotNull(savedUser.getId());

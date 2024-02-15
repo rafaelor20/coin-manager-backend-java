@@ -1,13 +1,13 @@
 package com.example.coinmanager.controller;
 
-import com.pokemonreview.api.dto.AuthResponseDTO;
-import com.pokemonreview.api.dto.LoginDto;
-import com.pokemonreview.api.dto.RegisterDto;
-import com.pokemonreview.api.models.Role;
-import com.pokemonreview.api.models.UserEntity;
-import com.pokemonreview.api.repository.RoleRepository;
-import com.pokemonreview.api.repository.UserRepository;
-import com.pokemonreview.api.security.JWTGenerator;
+import com.example.coinmanager.dto.AuthResponseDTO;
+import com.example.coinmanager.dto.LoginDto;
+import com.example.coinmanager.dto.RegisterDto;
+import com.example.coinmanager.model.Role;
+import com.example.coinmanager.model.UserEntity;
+import com.example.coinmanager.repository.RoleRepository;
+import com.example.coinmanager.repository.UserRepository;
+import com.example.coinmanager.security.JWTGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Collections;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("auth")
 public class AuthController {
 
     private AuthenticationManager authenticationManager;
